@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import logo from '../../logo.svg';
 import './home.css';
 
@@ -11,9 +12,9 @@ class Home extends Component {
           <br />Chat
         </h1>
 
-        <a className="btn btn-primary btn-block btn-lg">
+        <Link to="/chat" className="btn btn-primary btn-block btn-lg">
           Start chat
-        </a>
+        </Link>
       </chat-home>
     );
   }
